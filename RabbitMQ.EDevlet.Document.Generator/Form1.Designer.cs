@@ -32,8 +32,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtConnect = new System.Windows.Forms.TextBox();
             this.btnConnect = new System.Windows.Forms.Button();
-            this.listBox1 = new System.Windows.Forms.ListBox();
             this.btnCreateDocument = new System.Windows.Forms.Button();
+            this.txtLog = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -51,13 +51,14 @@
             // txtConnect
             // 
             this.txtConnect.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txtConnect.Font = new System.Drawing.Font("Agency FB", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtConnect.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtConnect.Location = new System.Drawing.Point(17, 33);
-            this.txtConnect.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtConnect.Margin = new System.Windows.Forms.Padding(4);
             this.txtConnect.Name = "txtConnect";
-            this.txtConnect.Size = new System.Drawing.Size(483, 32);
+            this.txtConnect.Size = new System.Drawing.Size(483, 26);
             this.txtConnect.TabIndex = 1;
-            this.txtConnect.Text = "amqp://democlient:democlient@localhost:5672/DemoVH";
+            this.txtConnect.Text = "amqp://administrator:administrator@localhost:5672";
+            this.txtConnect.TextChanged += new System.EventHandler(this.txtConnect_TextChanged);
             // 
             // btnConnect
             // 
@@ -70,22 +71,13 @@
             this.btnConnect.Font = new System.Drawing.Font("Agency FB", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnConnect.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnConnect.Location = new System.Drawing.Point(400, 73);
-            this.btnConnect.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnConnect.Margin = new System.Windows.Forms.Padding(4);
             this.btnConnect.Name = "btnConnect";
             this.btnConnect.Size = new System.Drawing.Size(100, 35);
             this.btnConnect.TabIndex = 2;
             this.btnConnect.Text = "Connect";
             this.btnConnect.UseVisualStyleBackColor = false;
-            // 
-            // listBox1
-            // 
-            this.listBox1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 20;
-            this.listBox1.Location = new System.Drawing.Point(0, 263);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(513, 204);
-            this.listBox1.TabIndex = 3;
+            this.btnConnect.Click += new System.EventHandler(this.btnConnect_Click);
             // 
             // btnCreateDocument
             // 
@@ -106,13 +98,22 @@
             this.btnCreateDocument.Text = "Create Document";
             this.btnCreateDocument.UseVisualStyleBackColor = false;
             // 
+            // txtLog
+            // 
+            this.txtLog.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.txtLog.Location = new System.Drawing.Point(0, 271);
+            this.txtLog.Name = "txtLog";
+            this.txtLog.Size = new System.Drawing.Size(513, 196);
+            this.txtLog.TabIndex = 5;
+            this.txtLog.Text = "";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(5F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(513, 467);
+            this.Controls.Add(this.txtLog);
             this.Controls.Add(this.btnCreateDocument);
-            this.Controls.Add(this.listBox1);
             this.Controls.Add(this.btnConnect);
             this.Controls.Add(this.txtConnect);
             this.Controls.Add(this.label1);
@@ -134,8 +135,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtConnect;
         private System.Windows.Forms.Button btnConnect;
-        private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.Button btnCreateDocument;
+        private System.Windows.Forms.RichTextBox txtLog;
     }
 }
 
