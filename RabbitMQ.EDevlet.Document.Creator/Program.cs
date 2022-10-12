@@ -41,7 +41,7 @@ namespace RabbitMQ.EDevlet.Document.Creator
 
             channel.BasicConsume(createDocument, true, consumerEvent);
 
-            Console.WriteLine($"{documentCreateExchange} listening");
+            Console.WriteLine($"Exchange: {documentCreateExchange} listening");
 
             Console.ReadLine();
 
@@ -54,7 +54,7 @@ namespace RabbitMQ.EDevlet.Document.Creator
             var model = JsonConvert.DeserializeObject<DocumentCreateModel>(modelJson);
             Console.WriteLine($"Recived Data URL: {modelJson}");
             
-            Task.Delay(5000).GetAwaiter().GetResult();
+            Task.Delay(2000).GetAwaiter().GetResult();
 
            
             model.url = "http://www.turkiye.gov.tr/docs/x.pdf";
@@ -69,11 +69,8 @@ namespace RabbitMQ.EDevlet.Document.Creator
         private static void WriteToQueue(string QueueName, DocumentCreateModel model)
         {
             var messageArr = Encoding.UTF8.GetBytes(JsonConvert.SerializeObject(model));
-            Console.WriteLine(Encoding.UTF8.GetBytes(JsonConvert.SerializeObject(model)));
 
             channel.BasicPublish(documentCreateExchange, QueueName, null, messageArr);
-
-          
 
             Console.WriteLine("message published");
         }
