@@ -1,0 +1,11 @@
+D:\Enes Projects\RabbitMQ.EDevlet.Document.Generator\RabbitMQ.EDevlet.Document.Generator.NetFramework\RabbitMQ.EDevlet.Document.Generator\bin\Debug\RabbitMQ.EDevlet.Document.Generator.exe.config
+D:\Enes Projects\RabbitMQ.EDevlet.Document.Generator\RabbitMQ.EDevlet.Document.Generator.NetFramework\RabbitMQ.EDevlet.Document.Generator\bin\Debug\RabbitMQ.EDevlet.Document.Generator.exe
+D:\Enes Projects\RabbitMQ.EDevlet.Document.Generator\RabbitMQ.EDevlet.Document.Generator.NetFramework\RabbitMQ.EDevlet.Document.Generator\bin\Debug\RabbitMQ.EDevlet.Document.Generator.pdb
+D:\Enes Projects\RabbitMQ.EDevlet.Document.Generator\RabbitMQ.EDevlet.Document.Generator.NetFramework\RabbitMQ.EDevlet.Document.Generator\obj\Debug\RabbitMQ.EDevlet.Document.Generator.csproj.AssemblyReference.cache
+D:\Enes Projects\RabbitMQ.EDevlet.Document.Generator\RabbitMQ.EDevlet.Document.Generator.NetFramework\RabbitMQ.EDevlet.Document.Generator\obj\Debug\RabbitMQ.EDevlet.Document.Generator.csproj.SuggestedBindingRedirects.cache
+D:\Enes Projects\RabbitMQ.EDevlet.Document.Generator\RabbitMQ.EDevlet.Document.Generator.NetFramework\RabbitMQ.EDevlet.Document.Generator\obj\Debug\RabbitMQ.EDevlet.Document.Generator.Form1.resources
+D:\Enes Projects\RabbitMQ.EDevlet.Document.Generator\RabbitMQ.EDevlet.Document.Generator.NetFramework\RabbitMQ.EDevlet.Document.Generator\obj\Debug\RabbitMQ.EDevlet.Document.Generator.Properties.Resources.resources
+D:\Enes Projects\RabbitMQ.EDevlet.Document.Generator\RabbitMQ.EDevlet.Document.Generator.NetFramework\RabbitMQ.EDevlet.Document.Generator\obj\Debug\RabbitMQ.EDevlet.Document.Generator.csproj.GenerateResource.cache
+D:\Enes Projects\RabbitMQ.EDevlet.Document.Generator\RabbitMQ.EDevlet.Document.Generator.NetFramework\RabbitMQ.EDevlet.Document.Generator\obj\Debug\RabbitMQ.EDevlet.Document.Generator.csproj.CoreCompileInputs.cache
+D:\Enes Projects\RabbitMQ.EDevlet.Document.Generator\RabbitMQ.EDevlet.Document.Generator.NetFramework\RabbitMQ.EDevlet.Document.Generator\obj\Debug\RabbitMQ.EDevlet.Document.Generator.exe
+D:\Enes Projects\RabbitMQ.EDevlet.Document.Generator\RabbitMQ.EDevlet.Document.Generator.NetFramework\RabbitMQ.EDevlet.Document.Generator\obj\Debug\RabbitMQ.EDevlet.Document.Generator.pdb
