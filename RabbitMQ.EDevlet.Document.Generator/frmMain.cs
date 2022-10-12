@@ -10,10 +10,11 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using EDevlet.Document.Common;
 using Newtonsoft.Json;
+using RabbitMQ.Client.Events;
 
 namespace RabbitMQ.EDevlet.Document.Generator
 {
-    public partial class Form1 : Form
+    public partial class frmMain : Form
     {
         IConnection connection;
         private readonly string createDocument = "create_document_queue";
@@ -24,9 +25,9 @@ namespace RabbitMQ.EDevlet.Document.Generator
 
         IModel channel => _channel ?? (_channel = GetChannel());
 
-      
+        frmSplash frmSplash = new frmSplash();
 
-        public Form1()
+        public frmMain()
         {
             InitializeComponent();
         }
@@ -58,6 +59,33 @@ namespace RabbitMQ.EDevlet.Document.Generator
                 DocumentType = DocumentType.Pdf
             };
             WriteToQueue(createDocument, model);
+
+        
+            frmSplash.Show();
+
+            var consumerEvent = new EventingBasicConsumer(channel);
+
+            consumerEvent.Received += ConsumerEvent_Received;
+
+            channel.BasicConsume(documentCreated, true, consumerEvent);
+        }
+
+        private void ConsumerEvent_Received(object sender, BasicDeliverEventArgs e)
+        {
+            var model = JsonConvert.DeserializeObject<DocumentCreateModel>(Encoding.UTF8.GetString(e.Body.ToArray()));
+            AddLog($"Recived Data URL: {model.url}");
+
+            closeSplashScreen(frmSplash);
+        }
+
+        private void closeSplashScreen(frmSplash frmSplash)
+        {
+            if (frmSplash.InvokeRequired)
+            {
+                    frmSplash.Invoke(new Action(() => closeSplashScreen(frmSplash)));
+                return;
+            }
+            frmSplash.Close();  
         }
 
         private void WriteToQueue(string QueueName, DocumentCreateModel model)

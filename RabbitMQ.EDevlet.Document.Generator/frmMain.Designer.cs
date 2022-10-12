@@ -1,6 +1,6 @@
 ﻿namespace RabbitMQ.EDevlet.Document.Generator
 {
-    partial class Form1
+    partial class frmMain
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             this.label1 = new System.Windows.Forms.Label();
             this.txtConnect = new System.Windows.Forms.TextBox();
             this.btnConnect = new System.Windows.Forms.Button();
