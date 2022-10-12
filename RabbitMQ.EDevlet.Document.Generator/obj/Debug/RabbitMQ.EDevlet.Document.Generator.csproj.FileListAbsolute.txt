@@ -26,3 +26,5 @@ D:\Enes Projects\RabbitMQ.EDevlet.Document.Generator\RabbitMQ.EDevlet.Document.G
 D:\Enes Projects\RabbitMQ.EDevlet.Document.Generator\RabbitMQ.EDevlet.Document.Generator.NetFramework\RabbitMQ.EDevlet.Document.Generator\bin\Debug\System.Threading.Channels.xml
 D:\Enes Projects\RabbitMQ.EDevlet.Document.Generator\RabbitMQ.EDevlet.Document.Generator.NetFramework\RabbitMQ.EDevlet.Document.Generator\bin\Debug\System.Threading.Tasks.Extensions.xml
 D:\Enes Projects\RabbitMQ.EDevlet.Document.Generator\RabbitMQ.EDevlet.Document.Generator.NetFramework\RabbitMQ.EDevlet.Document.Generator\obj\Debug\RabbitMQ.EDevlet.Document.Generator.csproj.CopyComplete
+D:\Enes Projects\RabbitMQ.EDevlet.Document.Generator\RabbitMQ.EDevlet.Document.Generator.NetFramework\RabbitMQ.EDevlet.Document.Generator\bin\Debug\EDevlet.Document.Common.dll
+D:\Enes Projects\RabbitMQ.EDevlet.Document.Generator\RabbitMQ.EDevlet.Document.Generator.NetFramework\RabbitMQ.EDevlet.Document.Generator\bin\Debug\EDevlet.Document.Common.pdb

@@ -1,0 +1,6 @@
+D:\Enes Projects\RabbitMQ.EDevlet.Document.Generator\RabbitMQ.EDevlet.Document.Generator.NetFramework\EDevlet.Document.Common\bin\Debug\EDevlet.Document.Common.dll
+D:\Enes Projects\RabbitMQ.EDevlet.Document.Generator\RabbitMQ.EDevlet.Document.Generator.NetFramework\EDevlet.Document.Common\bin\Debug\EDevlet.Document.Common.pdb
+D:\Enes Projects\RabbitMQ.EDevlet.Document.Generator\RabbitMQ.EDevlet.Document.Generator.NetFramework\EDevlet.Document.Common\obj\Debug\EDevlet.Document.Common.csproj.AssemblyReference.cache
+D:\Enes Projects\RabbitMQ.EDevlet.Document.Generator\RabbitMQ.EDevlet.Document.Generator.NetFramework\EDevlet.Document.Common\obj\Debug\EDevlet.Document.Common.csproj.CoreCompileInputs.cache
+D:\Enes Projects\RabbitMQ.EDevlet.Document.Generator\RabbitMQ.EDevlet.Document.Generator.NetFramework\EDevlet.Document.Common\obj\Debug\EDevlet.Document.Common.dll
+D:\Enes Projects\RabbitMQ.EDevlet.Document.Generator\RabbitMQ.EDevlet.Document.Generator.NetFramework\EDevlet.Document.Common\obj\Debug\EDevlet.Document.Common.pdb

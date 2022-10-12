@@ -105,5 +105,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EDevlet.Document.Common\EDevlet.Document.Common.csproj">
+      <Project>{153b444a-5820-40ee-9c04-e7c6ecd975e8}</Project>
+      <Name>EDevlet.Document.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -57,8 +57,8 @@
             this.txtConnect.Name = "txtConnect";
             this.txtConnect.Size = new System.Drawing.Size(483, 26);
             this.txtConnect.TabIndex = 1;
-            this.txtConnect.Text = "amqp://administrator:administrator@localhost:5672";
-            this.txtConnect.TextChanged += new System.EventHandler(this.txtConnect_TextChanged);
+            this.txtConnect.Text = "amqp://guest:guest@localhost:5672";
+           
             // 
             // btnConnect
             // 
@@ -97,6 +97,7 @@
             this.btnCreateDocument.TabIndex = 4;
             this.btnCreateDocument.Text = "Create Document";
             this.btnCreateDocument.UseVisualStyleBackColor = false;
+            this.btnCreateDocument.Click += new System.EventHandler(this.btnCreateDocument_Click);
             // 
             // txtLog
             // 
