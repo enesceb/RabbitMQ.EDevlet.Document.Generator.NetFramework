@@ -25,7 +25,7 @@ namespace RabbitMQ.EDevlet.Document.Generator
 
         IModel channel => _channel ?? (_channel = GetChannel());
 
-        frmSplash frmSplash = new frmSplash();
+
 
         public frmMain()
         {
@@ -50,7 +50,7 @@ namespace RabbitMQ.EDevlet.Document.Generator
 
 
      
-        private void btnCreateDocument_Click(object sender, EventArgs e)
+        public void btnCreateDocument_Click(object sender, EventArgs e)
         {
             var model = new DocumentCreateModel()
             {
@@ -60,12 +60,12 @@ namespace RabbitMQ.EDevlet.Document.Generator
             };
             WriteToQueue(createDocument, model);
 
-        
-            frmSplash.Show();
+
 
             var consumerEvent = new EventingBasicConsumer(channel);
 
             consumerEvent.Received += ConsumerEvent_Received;
+
 
             channel.BasicConsume(documentCreated, true, consumerEvent);
         }
@@ -75,18 +75,9 @@ namespace RabbitMQ.EDevlet.Document.Generator
             var model = JsonConvert.DeserializeObject<DocumentCreateModel>(Encoding.UTF8.GetString(e.Body.ToArray()));
             AddLog($"Recived Data URL: {model.url}");
 
-            closeSplashScreen(frmSplash);
         }
 
-        private void closeSplashScreen(frmSplash frmSplash)
-        {
-            if (frmSplash.InvokeRequired)
-            {
-                    frmSplash.Invoke(new Action(() => closeSplashScreen(frmSplash)));
-                return;
-            }
-            frmSplash.Close();  
-        }
+     
 
         private void WriteToQueue(string QueueName, DocumentCreateModel model)
         {
@@ -114,11 +105,13 @@ namespace RabbitMQ.EDevlet.Document.Generator
         private void AddLog(string logString)
         {
             logString = $"[{DateTime.Now:dd.MM.yyyy HH:mm:ss}] - {logString}";
-            txtLog.AppendText($"{logString}\n");
+            
+            txtLog.Invoke(new Action(() => txtLog.AppendText($"{logString}\n")));
+
+            txtLog.Invoke(new Action(() => txtLog.ScrollToCaret()));
 
             // set the cursor to end
-            txtLog.SelectionStart = txtLog.Text.Length;
-            txtLog.ScrollToCaret();
+
         }
 
        

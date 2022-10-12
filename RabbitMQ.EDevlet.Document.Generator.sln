@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQ.EDevlet.Document.G
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EDevlet.Document.Common", "EDevlet.Document.Common\EDevlet.Document.Common.csproj", "{153B444A-5820-40EE-9C04-E7C6ECD975E8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQ.EDevlet.Document.Creator", "RabbitMQ.EDevlet.Document.Creator\RabbitMQ.EDevlet.Document.Creator.csproj", "{2BDB8A38-D304-4B39-8826-ABFEFC3D0374}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{153B444A-5820-40EE-9C04-E7C6ECD975E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{153B444A-5820-40EE-9C04-E7C6ECD975E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{153B444A-5820-40EE-9C04-E7C6ECD975E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2BDB8A38-D304-4B39-8826-ABFEFC3D0374}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BDB8A38-D304-4B39-8826-ABFEFC3D0374}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BDB8A38-D304-4B39-8826-ABFEFC3D0374}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BDB8A38-D304-4B39-8826-ABFEFC3D0374}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
